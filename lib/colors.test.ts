@@ -13,7 +13,7 @@ test("Can generate pngs", () => {
     mockedStream.pipe(out);
   }
   generateColor(mockedStream, {
-    color: "#0000A0",
+    color: "#7F87BD",
     filetype: "png",
     height: 3000,
     width: 200,
@@ -27,7 +27,7 @@ test("Can generate pdfs", () => {
     mockedStream.pipe(out);
   }
   generateColor(mockedStream, {
-    color: "#0000A0",
+    color: "#7F87BD",
     filetype: "pdf",
     height: 3000,
     width: 200,
@@ -41,7 +41,7 @@ test("Can generate jpegs", () => {
     mockedStream.pipe(out);
   }
   generateColor(mockedStream, {
-    color: "#0000A0",
+    color: "#7F87BD",
     filetype: "jpeg",
     height: 3000,
     width: 200,
