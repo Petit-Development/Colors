@@ -4,7 +4,6 @@ import { Writable } from "stream";
 interface Params {
   /**
    * The color to be generated
-   *
    */
   color: string;
 
