@@ -53,8 +53,8 @@ function determineStream(canvas: Canvas, filetype: string) {
   if (filetype === "pdf") {
     return canvas.createPDFStream();
   } else if (filetype === "png") {
-    return canvas.createJPEGStream();
-  } else {
     return canvas.createPNGStream();
+  } else {
+    return canvas.createJPEGStream();
   }
 }
