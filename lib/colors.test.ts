@@ -36,8 +36,8 @@ test("Can generate pdfs", async () => {
     height: 3000,
     width: 200,
   });
-  //const ret = await FileType.fromStream(mockedStream);
-  //expect(ret!.mime).toBe("image/jpeg");
+  const ret = await FileType.fromStream(mockedStream);
+  expect(ret!.mime).toBe("image/pdf");
 });
 
 test("Can generate jpegs", async () => {
