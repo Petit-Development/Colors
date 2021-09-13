@@ -8,7 +8,11 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
     res.setHeader("Content-Type", "application/json");
     return res.status(400).send({ error: "Missing color field" });
   }
-  res.setHeader("Content-Type", "image/png");
+  const filetype = req.query.filetype ?? "png";
+  const contentType = `${
+    filetype == "pdf" ? "application" : "image"
+  }/${filetype}`;
+  res.setHeader("Content-Type", contentType);
   const queryColor = req.query.color.toString();
   const color = queryColor.startsWith("#") ? queryColor : `#${queryColor}`;
   const width = req.query.width
