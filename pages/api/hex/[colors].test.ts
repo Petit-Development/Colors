@@ -5,7 +5,7 @@ test("Color image", () => {
   const { req, res } = createMocks({
     method: "GET",
     query: {
-      "color": "#FFFFFF"
+      "color": "#7F87BD"
     }
   });
 });
