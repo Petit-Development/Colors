@@ -14,3 +14,8 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.title {
+  font-weight: bold;
+  font-size: 48px;
+}
