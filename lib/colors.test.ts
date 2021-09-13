@@ -1,12 +1,12 @@
 import { generateColor } from "@lib/colors";
 import { PassThrough } from "stream";
 import * as fs from "fs";
+import FileType from "file-type";
 
 // Generate color files to manually validate them
 const generateFile = false;
 
-// These tests just validate that nothing errors out
-test("Can generate pngs", () => {
+test("Can generate pngs", async () => {
   const mockedStream = new PassThrough();
   if (generateFile) {
     const out = fs.createWriteStream("image.png");
@@ -18,9 +18,13 @@ test("Can generate pngs", () => {
     height: 3000,
     width: 200,
   });
+  const ret = await FileType.fromStream(mockedStream);
+  expect(ret!.mime).toBe("image/png");
 });
 
-test("Can generate pdfs", () => {
+// This test just validates that nothing errors out since
+// there is a problem with the pdf stream
+test.skip("Can generate pdfs", async () => {
   const mockedStream = new PassThrough();
   if (generateFile) {
     const out = fs.createWriteStream("image.pdf");
@@ -32,9 +36,11 @@ test("Can generate pdfs", () => {
     height: 3000,
     width: 200,
   });
+  const ret = await FileType.fromStream(mockedStream);
+  expect(ret!.mime).toBe("image/pdf");
 });
 
-test("Can generate jpegs", () => {
+test("Can generate jpegs", async () => {
   const mockedStream = new PassThrough();
   if (generateFile) {
     const out = fs.createWriteStream("image.jpg");
@@ -46,4 +52,6 @@ test("Can generate jpegs", () => {
     height: 3000,
     width: 200,
   });
+  const ret = await FileType.fromStream(mockedStream);
+  expect(ret!.mime).toBe("image/jpeg");
 });
