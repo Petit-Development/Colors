@@ -1,0 +1,22 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.temp1 {
+  background-color: var(--main-color);
+}
+
+.temp2 {
+  background-color: var(--main-color);
+}
+
+.temp2wrapper {
+  display: block;
+  background-color: rgba(255, 255, 255, .4);
+}
