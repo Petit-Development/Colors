@@ -8,4 +8,5 @@ test("Color image", () => {
       "color": "#7F87BD"
     }
   });
+  handler(req, res);
 });
