@@ -7,3 +7,12 @@
   align-items: center;
   height: 100vh;
 }
+
+.temp1 {
+  background-color: var(--color-main);
+}
+
+.temp2 {
+  filter: brightness(1);
+  background-color: var(--color-main);
+}
