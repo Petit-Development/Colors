@@ -24,7 +24,7 @@ test("Can generate pngs", async () => {
 
 // This test just validates that nothing errors out since
 // there is a problem with the pdf stream
-test("Can generate pdfs", async () => {
+test.skip("Can generate pdfs", async () => {
   const mockedStream = new PassThrough();
   if (generateFile) {
     const out = fs.createWriteStream("image.pdf");
