@@ -1,9 +1,12 @@
 :root {
   --main-color: #7F87BD;
-  --main-color: #FFFFFF;
+  --shadow-dispaly: -1px -1px 0 var(--border-color), 1px -1px 0 var(--border-color), -2px 2px 0 #000, 2px 2px 0 #000;
   --secondary-color: rgba(255, 255, 255, .4);;
   --border-color: #FFFFFF;
 }
+
+
+
 
 html,
 body {
@@ -26,6 +29,8 @@ a {
 }
 
 .title {
+  @include viewable;
+  color: var(--main-color);
   font-weight: bold;
   font-size: 2rem;
 }
@@ -45,4 +50,13 @@ h3 {
 
 .subtitle {
   font-size: .583rem;
+}
+
+input {
+  font: inherit;
+  padding: 10px;
+  font-size: inherit;
+  height: 70px;
+  width: 344px;
+  border-radius: 15px;
 }

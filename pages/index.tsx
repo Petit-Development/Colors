@@ -13,6 +13,7 @@ const Home: NextPage = () => {
       </Head>
       <div className="title">Colors.</div>
       <div className={styles.bubbles}>#7F87BD</div>
+      <input type="text" />
     </div>
   );
 };
