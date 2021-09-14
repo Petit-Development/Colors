@@ -11,30 +11,14 @@ const Home: NextPage = () => {
         <meta name="description" content="Easily view colors in the browser" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>
-        <span className="title">Title</span>
-        <h1>Heading 1</h1>
-        <h2>Heading 2</h2>
-        <h3>Heading 3</h3>
-        <p>body</p>
-        <span className="subtitle">subtitle</span>
-        <div>
-          <span className={styles.temp1}>color1</span>
-        </div>
-        <div className={styles.temp2}>
-          <span className={styles.temp2wrapper}>color2</span>
-        </div>
-
-        <button
-          onClick={() => {
-            document.body.style.setProperty("--main-color", "green");
-          }}
-        >
-          Click me To Go Crazy!
-        </button>
-      </div>
+      <div className="title">Colors.</div>
+      <div className={styles.bubbles}>#7F87BD</div>
     </div>
   );
+};
+
+const updateColor = (color: string) => {
+  document.body.style.setProperty("--main-color", color);
 };
 
 export default Home;

@@ -1,6 +1,8 @@
 :root {
-  --main-color: red;
+  --main-color: #7F87BD;
+  --main-color: #FFFFFF;
   --secondary-color: rgba(255, 255, 255, .4);;
+  --border-color: #FFFFFF;
 }
 
 html,
@@ -10,6 +12,7 @@ body {
   font-family: Monda, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 24px;
+  background-color: var(--main-color);
 }
 
 
