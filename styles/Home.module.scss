@@ -1,0 +1,35 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container .title {
+  @include viewable;
+}
+
+.temp1 {
+  background-color: var(--main-color);
+}
+
+.temp2 {
+  background-color: var(--main-color);
+}
+
+.temp2wrapper {
+  display: block;
+  background-color: var(--secondary-color);
+}
+
+.bubbles {
+  @include viewable;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 104px;
+  color: var(--main-color);
+}
