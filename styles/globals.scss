@@ -1,12 +1,8 @@
 :root {
   --main-color: #7F87BD;
+  --secondary-color: #333333;
   --shadow-dispaly: -1px -1px 0 var(--border-color), 1px -1px 0 var(--border-color), -2px 2px 0 #000, 2px 2px 0 #000;
-  --secondary-color: rgba(255, 255, 255, .4);;
-  --border-color: #FFFFFF;
 }
-
-
-
 
 html,
 body {
@@ -16,6 +12,7 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 24px;
   background-color: var(--main-color);
+  color: #FFFFFF;
 }
 
 
@@ -29,10 +26,11 @@ a {
 }
 
 .title {
-  @include viewable;
-  color: var(--main-color);
+  color: var(--secondary-color);
+  text-shadow: 0px 4px 4px var(--secondary-color);
   font-weight: bold;
   font-size: 2rem;
+  user-select: none;
 }
 
 h1 {
