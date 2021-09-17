@@ -1,5 +1,8 @@
 @mixin viewable {
   text-shadow: -1px -1px 0 var(--secondary-color), 1px -1px 0 var(--secondary-color), -1px 1px 0 var(--secondary-color), 1px 1px 0 var(--secondary-color);
+  //-webkit-text-stroke: 2px var(--secondary-color);
+
+
 }
 @mixin cool-shadow {
   text-shadow: 0 1px 0 var(--secondary-color), 0 2px 0 var(--secondary-color),
