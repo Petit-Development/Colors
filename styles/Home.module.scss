@@ -9,22 +9,6 @@
   background-color: var(--main-color);
 }
 
-.container .title {
-  color: var(--secondary-color);
-}
-
-.temp1 {
-  background-color: var(--main-color);
-}
-
-.temp2 {
-  background-color: var(--main-color);
-}
-
-.temp2wrapper {
-  display: block;
-}
-
 .bubbles {
   @include viewable;
   font-style: normal;
