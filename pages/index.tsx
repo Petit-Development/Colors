@@ -2,7 +2,8 @@ import createPalette from "@lib/palette";
 import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.scss";
+import styles from "@styles/Home.module.scss";
+import Button from "components/button";
 
 const Home: NextPage = () => {
   return (
@@ -15,7 +16,7 @@ const Home: NextPage = () => {
       <div className="title">Colors</div>
       <div className={styles.bubbles}>#7F87BD</div>
       <input type="text" />
-      <button onClick={() => updateColor('green')}>click</button>
+      <Button onClick={()=>{}} text="click" />
     </div>
   );
 };
