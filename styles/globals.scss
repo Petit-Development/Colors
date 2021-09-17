@@ -55,6 +55,6 @@ input {
   padding: 10px;
   font-size: inherit;
   height: 70px;
-  width: 344px;
+  width: clamp(50px, 75%, 344px); 
   border-radius: 15px;
 }

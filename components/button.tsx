@@ -1,15 +1,16 @@
-import styles from "@styles/Home.module.scss";
 import { FC } from "react";
+import styles from "@styles/Button.module.scss";
 
 interface ButtonProps {
   text: string;
+  type?: "play" | "settings" | "export";
   onClick: () => void;
 }
 
-const Button: FC<ButtonProps> = ({ onClick, text }) => {
+const Button: FC<ButtonProps> = ({ onClick, text, type = "export" }) => {
   return (
-    <div className={styles.button}>
-      <button onClick={onClick} type="button">{text}</button>
+    <div onClick={onClick} className={`${styles.button} ${styles.play}`}>
+      {text}
     </div>
   );
 };
