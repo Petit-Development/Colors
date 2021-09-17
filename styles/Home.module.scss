@@ -17,3 +17,8 @@
   line-height: 104px;
   color: var(--main-color);
 }
+
+.bubbles::selection {
+  color: var(--main-color);
+  background-color: var(--secondary-color);
+}
