@@ -12,3 +12,15 @@ test('It creates the correct palette for dark colors', () => {
   expect(palette.primary).toBe('#544f57');
   expect(palette.secondary).toBe('#87808c');
 });
+
+test('It creates the correct palette for black', () => {
+  const palette = createPalette('#000000');
+  expect(palette.primary).toBe('#000000');
+  expect(palette.secondary).toBe('#333333');
+});
+
+test('It creates the correct palette for white', () => {
+  const palette = createPalette('#ffffff');
+  expect(palette.primary).toBe('#ffffff');
+  expect(palette.secondary).toBe('#cccccc');
+});
