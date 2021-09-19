@@ -8,9 +8,15 @@ interface ButtonProps {
 }
 
 const Button: FC<ButtonProps> = ({ onClick, text, type = "export" }) => {
+  const sub = type == 'play' ? 'play_arrow' : 'settings';
+
   return (
-    <div onClick={onClick} className={`${styles.button} ${styles.play}`}>
-      {text}
+    <div onClick={onClick} className={`${styles.button} ${styles[type]}`}>
+      {type != 'export' ? 
+      <i className={'material-icons'}>{sub}</i>
+      :
+        'Export'
+      }
     </div>
   );
 };
