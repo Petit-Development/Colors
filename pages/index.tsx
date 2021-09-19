@@ -3,7 +3,8 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "@styles/Home.module.scss";
-import Button from "components/button";
+import IconButton from "@components/buttons/iconButton";
+import TextButton from "@components/buttons/textButton";
 
 const Home: NextPage = () => {
   return (
@@ -16,7 +17,8 @@ const Home: NextPage = () => {
       <div className="title">Colors</div>
       <div className={styles.bubbles}>#7F87BD</div>
       <input type="text" />
-      <Button onClick={()=>{}} text="click" />
+      <IconButton className='play' icon='play' onClick={()=>{}}  />
+      <TextButton text='Export' onClick={()=>{}}  />
     </div>
   );
 };

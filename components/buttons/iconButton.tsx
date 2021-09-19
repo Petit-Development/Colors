@@ -1,0 +1,19 @@
+import { FC } from "react";
+import styles from "@styles/Button.module.scss";
+
+interface ButtonProps {
+  className?: string;
+  icon: 'play' | 'settings';
+  onClick?: () => void;
+}
+
+const IconButton: FC<ButtonProps> = ({ onClick, icon, className }) => {
+  const sub = icon == "play" ? "play_arrow" : "settings";
+  return (
+    <div onClick={onClick} className={`${styles.button} ${className && styles[className]}`}>
+      <i className={"material-icons"}>{sub}</i>
+    </div>
+  );
+};
+
+export default IconButton;

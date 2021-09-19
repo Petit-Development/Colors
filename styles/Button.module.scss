@@ -13,10 +13,14 @@
     opacity: 0.9;
     cursor: pointer;
   }
+  padding: 10px;
 }
 
 .play {
   width: clamp(50px, 75%, 344px); 
+  i {
+    font-size: 40px;
+  }
 }
 
 .settings {
