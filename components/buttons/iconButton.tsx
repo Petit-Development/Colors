@@ -10,7 +10,7 @@ interface ButtonProps {
 const IconButton: FC<ButtonProps> = ({ onClick, icon, className }) => {
   const sub = icon == "play" ? "play_arrow" : "settings";
   return (
-    <div onClick={onClick} className={`${styles.button} ${className && styles[className]}`}>
+    <div onClick={onClick} className={`${styles.button} ${className}`}>
       <i className={"material-icons"}>{sub}</i>
     </div>
   );
