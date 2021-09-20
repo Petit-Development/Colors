@@ -12,10 +12,7 @@ interface ButtonProps {
 
 const TextButton: FC<ButtonProps> = ({ onClick, text, className }) => {
   return (
-    <div
-      onClick={onClick}
-      className={`${styles.button} ${className && styles[className]}`}
-    >
+    <div onClick={onClick} className={`${styles.button} ${className}`}>
       {text}
     </div>
   );
