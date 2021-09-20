@@ -12,6 +12,11 @@
     opacity: 0.9;
     cursor: pointer;
   }
+  &:active {
+    opacity: 1;
+    box-shadow: none;
+    color: var(--main-color);
+  }
   padding: 10px;
 }
 
