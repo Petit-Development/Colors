@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  width: clamp(50px, 75%, 344px); 
+  margin-top: 20px;
+}
+
+.play {
+  width: 100%;
+  i {
+    font-size: 40px;
+  }
+}
