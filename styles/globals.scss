@@ -1,20 +1,20 @@
 :root {
-  --main-color: #7F87BD;
-  --secondary-color: #333333;
-  --shadow-dispaly: -1px -1px 0 var(--border-color), 1px -1px 0 var(--border-color), -2px 2px 0 #000, 2px 2px 0 #000;
+  --main-color: #7f87bd;
+  --secondary-color: #49528d;
+  --shadow-dispaly: -1px -1px 0 var(--border-color),
+    1px -1px 0 var(--border-color), -2px 2px 0 #000, 2px 2px 0 #000;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Monda, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Monda, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-size: 24px;
   background-color: var(--main-color);
-  color: #FFFFFF;
+  color: #ffffff;
 }
-
 
 a {
   color: inherit;
@@ -48,14 +48,18 @@ h3 {
 }
 
 .subtitle {
-  font-size: .583rem;
+  font-size: 0.583rem;
 }
 
 input {
   font: inherit;
   padding: 10px;
+  border-color: var(--secondary-color);
+  &:hover {
+    border-color: var(--secondary-color);
+  }
   font-size: inherit;
   height: 70px;
-  width: clamp(50px, 75%, 344px); 
+  width: clamp(50px, 75%, 344px);
   border-radius: 15px;
 }
