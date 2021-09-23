@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: clamp(50px, 75%, 344px);
+  margin-top: 30px;
+}
+
+%container-button {
+  padding: 10px;
+}
+
+.play {
+  @extend %container-button;
+  width: 100%;
+  i {
+    font-size: 40px;
+  }
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.export {
+  @extend %container-button;
+  flex-grow: 3;
+  margin-right: clamp(0px, 5%, 62px);
+}
+
+@media (max-width: 500px) {
+  .export {
+    margin-right: 0px;
+  }
+}
+
+.settings {
+  @extend %container-button;
+  flex-grow: 1;
+  padding: 20px;
+}

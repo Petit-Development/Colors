@@ -35,7 +35,8 @@ a {
 
 h1 {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 900;
+  color: green;
 }
 
 h2 {
@@ -55,6 +56,6 @@ input {
   padding: 10px;
   font-size: inherit;
   height: 70px;
-  width: 344px;
+  width: clamp(50px, 75%, 344px); 
   border-radius: 15px;
 }
