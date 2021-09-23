@@ -5,7 +5,6 @@ import styles from "@styles/Controls.module.scss";
 interface ControlsProps {
   onSettingsClicked: () => void;
 }
-console.log(styles);
 const Controls: React.FC<ControlsProps> = ({}) => (
   <div className={styles.container}>
     <IconButton className={styles.play} icon="play" onClick={() => {}} />
