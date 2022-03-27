@@ -3,6 +3,7 @@
 </p>
 
 ### Colors
+
 An API and website that lets people view hex colors and download
 images of those hex colors.
 
